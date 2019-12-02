@@ -111,6 +111,16 @@ class Result implements \JsonSerializable
     }
 
     /**
+     * @param string $result
+     * @return Result
+     */
+    public function setResult(int $result): Result
+    {
+        $this->result = $result;
+        return $this;
+    }
+
+    /**
      * Implements __toString()
      *
      * @return string

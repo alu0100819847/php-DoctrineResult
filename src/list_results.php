@@ -13,6 +13,7 @@ use MiW\Results\Utils;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+global $argc, $argv;
 // Carga las variables de entorno
 Utils::loadEnv(__DIR__ . '/../');
 $entityManager = Utils::getEntityManager();
