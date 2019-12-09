@@ -28,8 +28,8 @@ if ($argc === 1) {
     $items = 0;
     /* @var Result $result */
     foreach ($results as $result) {
-        echo $result . PHP_EOL;
-        $items++;
+            echo $result . PHP_EOL;
+            $items++;
     }
     echo PHP_EOL . "Total: $items results.";
 } elseif (in_array('--json', $argv, true)) {

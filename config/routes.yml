@@ -1,0 +1,6 @@
+# routes.yaml
+list_user:
+  path:       /
+  controller: MyController::index
+  methods:    GET
+

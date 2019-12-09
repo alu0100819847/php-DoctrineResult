@@ -111,7 +111,7 @@ class Result implements \JsonSerializable
     }
 
     /**
-     * @param string $result
+     * @param int $result
      * @return Result
      */
     public function setResult(int $result): Result
@@ -120,6 +120,31 @@ class Result implements \JsonSerializable
         return $this;
     }
 
+    /**
+     * @return int
+     */
+    public function getResult(): int
+    {
+        return $this->result;
+    }
+
+    /**
+     * @param User
+     * @return Result
+     */
+    public function setUser(User $user): Result
+    {
+        $this->user = $user;
+        return $this;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser(): User
+    {
+        return $this->user;
+    }
     /**
      * Implements __toString()
      *
